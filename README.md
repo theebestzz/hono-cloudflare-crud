@@ -100,9 +100,13 @@ Deploy işleminden sonra API'niz **_Cloudflare Workers_** üzerinde yayına gire
 
 ```
 hono-cloudflare-crud/
-├── migrations/          # Veritabanı migrasyon dosyaları
-├── src/                 # Kaynak kod dizini
-│   ├── index.ts         # Hono.js API giriş noktası
-├── wrangler.toml        # Cloudflare yapılandırma dosyası
-└── package.json         # Proje bağımlılıkları ve script'ler
+├── src/
+│   ├── api/
+│   │   ├── postRoutes.ts     # Post CRUD işlemleri için API rotaları
+│   ├── middleware/
+│   │   ├── cors.ts           # CORS middleware
+│   ├── index.ts              # Ana API giriş noktası (server)
+├── migrations/               # Veritabanı migrasyon dosyaları
+├── wrangler.toml             # Cloudflare yapılandırma dosyası
+└── package.json              # Proje bağımlılıkları ve script'ler
 ```
