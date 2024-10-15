@@ -48,14 +48,15 @@ npm install -g wrangler
 
 Bu adımda veritabanı adı ve ID bilgileri gerekecek, bunları **_wrangler.toml_** dosyasına ekleyeceğiz.
 
-name = "hono-cloudflare-crud"
-main = "src/index.ts"
-compatibility_date = "2024-10-11"
+- name = "hono-cloudflare-crud"
+- main = "src/index.ts"
+- compatibility_date = "2024-10-11"
 
 [[d1_databases]]
-binding = "DB" # Kodda kullanacağımız veritabanı bağlantı ismi
-database_name = "your-d1-database-name" # Cloudflare D1 veritabanı ismi
-database_id = "your-d1-database-id" # Veritabanı ID'si
+
+- binding = "DB" # Kodda kullanacağımız veritabanı bağlantı ismi
+- database_name = "your-d1-database-name" # Cloudflare D1 veritabanı ismi
+- database_id = "your-d1-database-id" # Veritabanı ID'si
 
 **database_name ve database_id alanlarını, Cloudflare Dashboard'dan aldığınız bilgilerle doldurun.**
 
