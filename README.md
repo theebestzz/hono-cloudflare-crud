@@ -82,17 +82,13 @@ Bu komut sonrasında API'niz **http://localhost:8787** adresinde çalışıyor o
 
 Projeyi **Cloudflare Workers** platformuna deploy etmek için şu adımları izleyin:
 
-### 1.
-
-**_wrangler login_** komutu ile Cloudflare hesabınıza giriş yapın.
+### 1. **_wrangler login_** komutu ile Cloudflare hesabınıza giriş yapın.
 
 ```bash
 wrangler login
 ```
 
-### 2.
-
-Aşağıdaki komut ile projenizi deploy edin:
+### 2. Aşağıdaki komut ile projenizi deploy edin:
 
 ```bash
 wrangler deploy
@@ -102,7 +98,7 @@ Deploy işleminden sonra API'niz **_Cloudflare Workers_** üzerinde yayına gire
 
 ### Proje Yapısı
 
-```bash
+```
 hono-cloudflare-crud/
 ├── migrations/          # Veritabanı migrasyon dosyaları
 ├── src/                 # Kaynak kod dizini
